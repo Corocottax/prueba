@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: coral;">
+    
+    <h1>Esto es un formulario</h1>
+
+    <!--FORMULARIO-->
+
+    <form action="https://reqres.in/api/users?page2" method="post" autocomplete="new-text">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="first_name" required/>
+
+            <!--El name del input es la variable donde se mete el dato del usuario al enviar-->
+            <!--El for y el id son necesarios para unir el label con el input-->
+        
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text" name="last_name" required/>
+
+            <label for="ciudad">Ciudad</label>
+            <select id="ciudad" name="city">
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="valencia">Valencia</option>
+                <option value="granada">Granada</option>
+            </select>
+
+            <!--El value es la respuesta que almacena en name de city-->
+            <br />
+            <br />
+            <label for="nombreUsuario">Nombre de usuario: </label>
+            <input id="nombreUsuario" type="text" required name="username"/>
+
+            <label for="contrasenia">Nombre de usuario: </label>
+            <input 
+            id="contrasenia"
+            type="password" 
+            required name="password" 
+            placeholder="entre 4 y 10 caracteres" 
+            pattern="[A-Za-z0-9]{4,10}"
+            />
+
+            <!--En el pattern tengo la longitud al final y al prinicipio condiciones-->
+
+            <label for="correo">Email</label>
+            <input 
+            type="email" 
+            id="correo" 
+            name="email" 
+            required 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"/>
+
+            <label for="fechanac" >Fecha de nacimiento</label>
+            <input id="fechanac" type="date" name="date"/>
+
+            <label for="color">Color favorito</label>
+            <input type="color" id="color" name="colour" />
+
+            <label for="vip">Quieres ser cliente VIP?</label>
+            <input type="checkbox" id="vip" name="question">
+
+            <br/> 
+            <br/>
+
+            <label for="usermensaje">Mensaje: </label>
+
+            <br/>
+
+            <textarea 
+            name="mensaje" 
+            id="usermensaje" 
+            cols="30" 
+            rows="10" 
+            placeholder="Escribe aquí tu mensaje"
+            ></textarea>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>

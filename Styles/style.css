@@ -1,0 +1,66 @@
+/*Selectores por etiqueta*/
+
+body {
+    margin: 0;
+    font-family: "M PLUS 1 Code", sans-serif;
+    background-color: palegoldenrod;
+}
+
+h2 {
+    color: blue;
+}
+
+h1 {
+    color: ivory;
+}
+
+nav {
+    background-color: cornflowerblue;
+    color: floralwhite;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    margin-top: 0%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*Selectores de clase*/
+
+.subtitulo2 {
+    color: aliceblue;
+}
+
+.nombre {
+    color: mediumblue;
+}
+
+.mainImg {
+    width: 9.5rem;
+}
+
+/*Selectores de ID*/
+
+#section1 {
+    background-color: bisque;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#holaMundo {
+    color: blue;
+}
+
+/*Selectores múltiples*/
+
+nav a {
+    margin-right: 1rem;
+    color: honeydew;
+    
+}
